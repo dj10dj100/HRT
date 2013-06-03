@@ -1,24 +1,33 @@
 //
 //  hrtAppDelegate.m
-//  hrt
+//  HRT
 //
 //  Created by Daniel Jenkins on 03/06/2013.
 //  Copyright (c) 2013 Daniel Jenkins. All rights reserved.
 //
 
 #import "hrtAppDelegate.h"
+#import "IIViewDeckController.h"
+#import "IISideController.h"
 
-@implementation hrtAppDelegate
-
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    viewController* centerController = [[viewController alloc] initWithNibName:@"viewController" bundle:nil];
+    centerController.searchable = NO;
+    viewController* leftController = [[viewController alloc] initWithNibName:@"viewController" bundle:nil];
+    leftController.tintColor = [UIColor blackColor];
+    
+    
+    IIViewDeckController* deckController = [[IIViewDeckController alloc] initWithCenterViewController:[[UINavigationController alloc] initWithRootViewController:centerController]leftViewController:[IISideController autoConstrainedSideControllerWithViewController:leftController]];
+    
+    
+    self.window.rootViewController = deckController;    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

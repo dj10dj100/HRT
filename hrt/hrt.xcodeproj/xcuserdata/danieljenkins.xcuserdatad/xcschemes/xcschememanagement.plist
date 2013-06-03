@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>hrt.xcscheme</key>
+		<key>HRT.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CCCB0B90175CC4C2007E5E10</key>
+		<key>CCCB0BD7175CC635007E5E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

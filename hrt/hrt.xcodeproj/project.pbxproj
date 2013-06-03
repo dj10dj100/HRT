@@ -7,267 +7,246 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCCB0B95175CC4C2007E5E10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0B94175CC4C2007E5E10 /* UIKit.framework */; };
-		CCCB0B97175CC4C2007E5E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0B96175CC4C2007E5E10 /* Foundation.framework */; };
-		CCCB0B99175CC4C2007E5E10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0B98175CC4C2007E5E10 /* CoreGraphics.framework */; };
-		CCCB0B9F175CC4C2007E5E10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0B9D175CC4C2007E5E10 /* InfoPlist.strings */; };
-		CCCB0BA1175CC4C2007E5E10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BA0175CC4C2007E5E10 /* main.m */; };
-		CCCB0BA5175CC4C2007E5E10 /* hrtAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BA4175CC4C2007E5E10 /* hrtAppDelegate.m */; };
-		CCCB0BA7175CC4C2007E5E10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BA6175CC4C2007E5E10 /* Default.png */; };
-		CCCB0BA9175CC4C2007E5E10 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BA8175CC4C2007E5E10 /* Default@2x.png */; };
-		CCCB0BAB175CC4C2007E5E10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BAA175CC4C2007E5E10 /* Default-568h@2x.png */; };
-		CCCB0BAE175CC4C2007E5E10 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BAC175CC4C2007E5E10 /* MainStoryboard_iPhone.storyboard */; };
-		CCCB0BB1175CC4C2007E5E10 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BAF175CC4C2007E5E10 /* MainStoryboard_iPad.storyboard */; };
-		CCCB0BB4175CC4C2007E5E10 /* hrtFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BB3175CC4C2007E5E10 /* hrtFirstViewController.m */; };
-		CCCB0BB6175CC4C2007E5E10 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BB5175CC4C2007E5E10 /* first.png */; };
-		CCCB0BB8175CC4C2007E5E10 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BB7175CC4C2007E5E10 /* first@2x.png */; };
-		CCCB0BBB175CC4C2007E5E10 /* hrtSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BBA175CC4C2007E5E10 /* hrtSecondViewController.m */; };
-		CCCB0BBD175CC4C2007E5E10 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BBC175CC4C2007E5E10 /* second.png */; };
-		CCCB0BBF175CC4C2007E5E10 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BBE175CC4C2007E5E10 /* second@2x.png */; };
-		CCCB0BCB175CC4DB007E5E10 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BC6175CC4DB007E5E10 /* IISideController.m */; };
-		CCCB0BCC175CC4DB007E5E10 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BC8175CC4DB007E5E10 /* IIViewDeckController.m */; };
-		CCCB0BCD175CC4DB007E5E10 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BCA175CC4DB007E5E10 /* IIWrapController.m */; };
+		CCCB0BDC175CC635007E5E10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0BDB175CC635007E5E10 /* UIKit.framework */; };
+		CCCB0BDE175CC635007E5E10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0BDD175CC635007E5E10 /* Foundation.framework */; };
+		CCCB0BE0175CC635007E5E10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0BDF175CC635007E5E10 /* CoreGraphics.framework */; };
+		CCCB0BE6175CC635007E5E10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BE4175CC635007E5E10 /* InfoPlist.strings */; };
+		CCCB0BE8175CC635007E5E10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BE7175CC635007E5E10 /* main.m */; };
+		CCCB0BEC175CC635007E5E10 /* hrtAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BEB175CC635007E5E10 /* hrtAppDelegate.m */; };
+		CCCB0BEE175CC635007E5E10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BED175CC635007E5E10 /* Default.png */; };
+		CCCB0BF0175CC635007E5E10 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BEF175CC635007E5E10 /* Default@2x.png */; };
+		CCCB0BF2175CC635007E5E10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BF1175CC635007E5E10 /* Default-568h@2x.png */; };
+		CCCB0BFB175CC635007E5E10 /* viewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0BFA175CC635007E5E10 /* viewController.m */; };
+		CCCB0BFD175CC635007E5E10 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BFC175CC635007E5E10 /* first.png */; };
+		CCCB0BFF175CC635007E5E10 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0BFE175CC635007E5E10 /* first@2x.png */; };
+		CCCB0C12175CC640007E5E10 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0C0D175CC640007E5E10 /* IISideController.m */; };
+		CCCB0C13175CC640007E5E10 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0C0F175CC640007E5E10 /* IIViewDeckController.m */; };
+		CCCB0C14175CC640007E5E10 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCB0C11175CC640007E5E10 /* IIWrapController.m */; };
+		CCCB0C17175CC6E6007E5E10 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCB0C16175CC6E6007E5E10 /* QuartzCore.framework */; };
+		CCCB0C1A175CCA4D007E5E10 /* viewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCCB0C19175CCA4D007E5E10 /* viewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CCCB0B91175CC4C2007E5E10 /* hrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCCB0B94175CC4C2007E5E10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CCCB0B96175CC4C2007E5E10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CCCB0B98175CC4C2007E5E10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CCCB0B9C175CC4C2007E5E10 /* hrt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hrt-Info.plist"; sourceTree = "<group>"; };
-		CCCB0B9E175CC4C2007E5E10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CCCB0BA0175CC4C2007E5E10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CCCB0BA2175CC4C2007E5E10 /* hrt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hrt-Prefix.pch"; sourceTree = "<group>"; };
-		CCCB0BA3175CC4C2007E5E10 /* hrtAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrtAppDelegate.h; sourceTree = "<group>"; };
-		CCCB0BA4175CC4C2007E5E10 /* hrtAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hrtAppDelegate.m; sourceTree = "<group>"; };
-		CCCB0BA6175CC4C2007E5E10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CCCB0BA8175CC4C2007E5E10 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CCCB0BAA175CC4C2007E5E10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CCCB0BAD175CC4C2007E5E10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		CCCB0BB0175CC4C2007E5E10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		CCCB0BB2175CC4C2007E5E10 /* hrtFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrtFirstViewController.h; sourceTree = "<group>"; };
-		CCCB0BB3175CC4C2007E5E10 /* hrtFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hrtFirstViewController.m; sourceTree = "<group>"; };
-		CCCB0BB5175CC4C2007E5E10 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		CCCB0BB7175CC4C2007E5E10 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		CCCB0BB9175CC4C2007E5E10 /* hrtSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrtSecondViewController.h; sourceTree = "<group>"; };
-		CCCB0BBA175CC4C2007E5E10 /* hrtSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hrtSecondViewController.m; sourceTree = "<group>"; };
-		CCCB0BBC175CC4C2007E5E10 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		CCCB0BBE175CC4C2007E5E10 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		CCCB0BC5175CC4DB007E5E10 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
-		CCCB0BC6175CC4DB007E5E10 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
-		CCCB0BC7175CC4DB007E5E10 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
-		CCCB0BC8175CC4DB007E5E10 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
-		CCCB0BC9175CC4DB007E5E10 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
-		CCCB0BCA175CC4DB007E5E10 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		CCCB0BD8175CC635007E5E10 /* HRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCB0BDB175CC635007E5E10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCCB0BDD175CC635007E5E10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCCB0BDF175CC635007E5E10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCCB0BE3175CC635007E5E10 /* HRT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HRT-Info.plist"; sourceTree = "<group>"; };
+		CCCB0BE5175CC635007E5E10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCCB0BE7175CC635007E5E10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCCB0BE9175CC635007E5E10 /* HRT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HRT-Prefix.pch"; sourceTree = "<group>"; };
+		CCCB0BEA175CC635007E5E10 /* hrtAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrtAppDelegate.h; sourceTree = "<group>"; };
+		CCCB0BEB175CC635007E5E10 /* hrtAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hrtAppDelegate.m; sourceTree = "<group>"; };
+		CCCB0BED175CC635007E5E10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CCCB0BEF175CC635007E5E10 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CCCB0BF1175CC635007E5E10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CCCB0BF9175CC635007E5E10 /* viewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewController.h; sourceTree = "<group>"; };
+		CCCB0BFA175CC635007E5E10 /* viewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewController.m; sourceTree = "<group>"; };
+		CCCB0BFC175CC635007E5E10 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		CCCB0BFE175CC635007E5E10 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		CCCB0C0C175CC640007E5E10 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		CCCB0C0D175CC640007E5E10 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		CCCB0C0E175CC640007E5E10 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		CCCB0C0F175CC640007E5E10 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		CCCB0C10175CC640007E5E10 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		CCCB0C11175CC640007E5E10 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		CCCB0C16175CC6E6007E5E10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CCCB0C19175CCA4D007E5E10 /* viewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = viewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CCCB0B8E175CC4C2007E5E10 /* Frameworks */ = {
+		CCCB0BD5175CC635007E5E10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCB0B95175CC4C2007E5E10 /* UIKit.framework in Frameworks */,
-				CCCB0B97175CC4C2007E5E10 /* Foundation.framework in Frameworks */,
-				CCCB0B99175CC4C2007E5E10 /* CoreGraphics.framework in Frameworks */,
+				CCCB0C17175CC6E6007E5E10 /* QuartzCore.framework in Frameworks */,
+				CCCB0BDC175CC635007E5E10 /* UIKit.framework in Frameworks */,
+				CCCB0BDE175CC635007E5E10 /* Foundation.framework in Frameworks */,
+				CCCB0BE0175CC635007E5E10 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CCCB0B88175CC4C2007E5E10 = {
+		CCCB0BCF175CC635007E5E10 = {
 			isa = PBXGroup;
 			children = (
-				CCCB0BCE175CC4EC007E5E10 /* ViewDeck */,
-				CCCB0B9A175CC4C2007E5E10 /* hrt */,
-				CCCB0B93175CC4C2007E5E10 /* Frameworks */,
-				CCCB0B92175CC4C2007E5E10 /* Products */,
+				CCCB0C18175CC787007E5E10 /* Vendor */,
+				CCCB0BE1175CC635007E5E10 /* HRT */,
+				CCCB0BDA175CC635007E5E10 /* Frameworks */,
+				CCCB0BD9175CC635007E5E10 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CCCB0B92175CC4C2007E5E10 /* Products */ = {
+		CCCB0BD9175CC635007E5E10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CCCB0B91175CC4C2007E5E10 /* hrt.app */,
+				CCCB0BD8175CC635007E5E10 /* HRT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCCB0B93175CC4C2007E5E10 /* Frameworks */ = {
+		CCCB0BDA175CC635007E5E10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCCB0B94175CC4C2007E5E10 /* UIKit.framework */,
-				CCCB0B96175CC4C2007E5E10 /* Foundation.framework */,
-				CCCB0B98175CC4C2007E5E10 /* CoreGraphics.framework */,
+				CCCB0C16175CC6E6007E5E10 /* QuartzCore.framework */,
+				CCCB0BDB175CC635007E5E10 /* UIKit.framework */,
+				CCCB0BDD175CC635007E5E10 /* Foundation.framework */,
+				CCCB0BDF175CC635007E5E10 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCCB0B9A175CC4C2007E5E10 /* hrt */ = {
+		CCCB0BE1175CC635007E5E10 /* HRT */ = {
 			isa = PBXGroup;
 			children = (
-				CCCB0BA3175CC4C2007E5E10 /* hrtAppDelegate.h */,
-				CCCB0BA4175CC4C2007E5E10 /* hrtAppDelegate.m */,
-				CCCB0BAC175CC4C2007E5E10 /* MainStoryboard_iPhone.storyboard */,
-				CCCB0BAF175CC4C2007E5E10 /* MainStoryboard_iPad.storyboard */,
-				CCCB0BB2175CC4C2007E5E10 /* hrtFirstViewController.h */,
-				CCCB0BB3175CC4C2007E5E10 /* hrtFirstViewController.m */,
-				CCCB0BB5175CC4C2007E5E10 /* first.png */,
-				CCCB0BB7175CC4C2007E5E10 /* first@2x.png */,
-				CCCB0BB9175CC4C2007E5E10 /* hrtSecondViewController.h */,
-				CCCB0BBA175CC4C2007E5E10 /* hrtSecondViewController.m */,
-				CCCB0BBC175CC4C2007E5E10 /* second.png */,
-				CCCB0BBE175CC4C2007E5E10 /* second@2x.png */,
-				CCCB0B9B175CC4C2007E5E10 /* Supporting Files */,
+				CCCB0BEA175CC635007E5E10 /* hrtAppDelegate.h */,
+				CCCB0BEB175CC635007E5E10 /* hrtAppDelegate.m */,
+				CCCB0BF9175CC635007E5E10 /* viewController.h */,
+				CCCB0BFA175CC635007E5E10 /* viewController.m */,
+				CCCB0BFC175CC635007E5E10 /* first.png */,
+				CCCB0BFE175CC635007E5E10 /* first@2x.png */,
+				CCCB0C19175CCA4D007E5E10 /* viewController.xib */,
+				CCCB0BE2175CC635007E5E10 /* Supporting Files */,
 			);
-			path = hrt;
+			path = HRT;
 			sourceTree = "<group>";
 		};
-		CCCB0B9B175CC4C2007E5E10 /* Supporting Files */ = {
+		CCCB0BE2175CC635007E5E10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCCB0B9C175CC4C2007E5E10 /* hrt-Info.plist */,
-				CCCB0B9D175CC4C2007E5E10 /* InfoPlist.strings */,
-				CCCB0BA0175CC4C2007E5E10 /* main.m */,
-				CCCB0BA2175CC4C2007E5E10 /* hrt-Prefix.pch */,
-				CCCB0BA6175CC4C2007E5E10 /* Default.png */,
-				CCCB0BA8175CC4C2007E5E10 /* Default@2x.png */,
-				CCCB0BAA175CC4C2007E5E10 /* Default-568h@2x.png */,
+				CCCB0BE3175CC635007E5E10 /* HRT-Info.plist */,
+				CCCB0BE4175CC635007E5E10 /* InfoPlist.strings */,
+				CCCB0BE7175CC635007E5E10 /* main.m */,
+				CCCB0BE9175CC635007E5E10 /* HRT-Prefix.pch */,
+				CCCB0BED175CC635007E5E10 /* Default.png */,
+				CCCB0BEF175CC635007E5E10 /* Default@2x.png */,
+				CCCB0BF1175CC635007E5E10 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CCCB0BCE175CC4EC007E5E10 /* ViewDeck */ = {
+		CCCB0C15175CC646007E5E10 /* ViewDeck */ = {
 			isa = PBXGroup;
 			children = (
-				CCCB0BC5175CC4DB007E5E10 /* IISideController.h */,
-				CCCB0BC6175CC4DB007E5E10 /* IISideController.m */,
-				CCCB0BC7175CC4DB007E5E10 /* IIViewDeckController.h */,
-				CCCB0BC8175CC4DB007E5E10 /* IIViewDeckController.m */,
-				CCCB0BC9175CC4DB007E5E10 /* IIWrapController.h */,
-				CCCB0BCA175CC4DB007E5E10 /* IIWrapController.m */,
+				CCCB0C0C175CC640007E5E10 /* IISideController.h */,
+				CCCB0C0D175CC640007E5E10 /* IISideController.m */,
+				CCCB0C0E175CC640007E5E10 /* IIViewDeckController.h */,
+				CCCB0C0F175CC640007E5E10 /* IIViewDeckController.m */,
+				CCCB0C10175CC640007E5E10 /* IIWrapController.h */,
+				CCCB0C11175CC640007E5E10 /* IIWrapController.m */,
 			);
 			name = ViewDeck;
+			sourceTree = "<group>";
+		};
+		CCCB0C18175CC787007E5E10 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				CCCB0C15175CC646007E5E10 /* ViewDeck */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCCB0B90175CC4C2007E5E10 /* hrt */ = {
+		CCCB0BD7175CC635007E5E10 /* HRT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCCB0BC2175CC4C2007E5E10 /* Build configuration list for PBXNativeTarget "hrt" */;
+			buildConfigurationList = CCCB0C09175CC635007E5E10 /* Build configuration list for PBXNativeTarget "HRT" */;
 			buildPhases = (
-				CCCB0B8D175CC4C2007E5E10 /* Sources */,
-				CCCB0B8E175CC4C2007E5E10 /* Frameworks */,
-				CCCB0B8F175CC4C2007E5E10 /* Resources */,
+				CCCB0BD4175CC635007E5E10 /* Sources */,
+				CCCB0BD5175CC635007E5E10 /* Frameworks */,
+				CCCB0BD6175CC635007E5E10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = hrt;
-			productName = hrt;
-			productReference = CCCB0B91175CC4C2007E5E10 /* hrt.app */;
+			name = HRT;
+			productName = HRT;
+			productReference = CCCB0BD8175CC635007E5E10 /* HRT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CCCB0B89175CC4C2007E5E10 /* Project object */ = {
+		CCCB0BD0175CC635007E5E10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = hrt;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Daniel Jenkins";
 			};
-			buildConfigurationList = CCCB0B8C175CC4C2007E5E10 /* Build configuration list for PBXProject "hrt" */;
+			buildConfigurationList = CCCB0BD3175CC635007E5E10 /* Build configuration list for PBXProject "HRT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CCCB0B88175CC4C2007E5E10;
-			productRefGroup = CCCB0B92175CC4C2007E5E10 /* Products */;
+			mainGroup = CCCB0BCF175CC635007E5E10;
+			productRefGroup = CCCB0BD9175CC635007E5E10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CCCB0B90175CC4C2007E5E10 /* hrt */,
+				CCCB0BD7175CC635007E5E10 /* HRT */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CCCB0B8F175CC4C2007E5E10 /* Resources */ = {
+		CCCB0BD6175CC635007E5E10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCB0B9F175CC4C2007E5E10 /* InfoPlist.strings in Resources */,
-				CCCB0BA7175CC4C2007E5E10 /* Default.png in Resources */,
-				CCCB0BA9175CC4C2007E5E10 /* Default@2x.png in Resources */,
-				CCCB0BAB175CC4C2007E5E10 /* Default-568h@2x.png in Resources */,
-				CCCB0BAE175CC4C2007E5E10 /* MainStoryboard_iPhone.storyboard in Resources */,
-				CCCB0BB1175CC4C2007E5E10 /* MainStoryboard_iPad.storyboard in Resources */,
-				CCCB0BB6175CC4C2007E5E10 /* first.png in Resources */,
-				CCCB0BB8175CC4C2007E5E10 /* first@2x.png in Resources */,
-				CCCB0BBD175CC4C2007E5E10 /* second.png in Resources */,
-				CCCB0BBF175CC4C2007E5E10 /* second@2x.png in Resources */,
+				CCCB0BE6175CC635007E5E10 /* InfoPlist.strings in Resources */,
+				CCCB0BEE175CC635007E5E10 /* Default.png in Resources */,
+				CCCB0BF0175CC635007E5E10 /* Default@2x.png in Resources */,
+				CCCB0BF2175CC635007E5E10 /* Default-568h@2x.png in Resources */,
+				CCCB0BFD175CC635007E5E10 /* first.png in Resources */,
+				CCCB0BFF175CC635007E5E10 /* first@2x.png in Resources */,
+				CCCB0C1A175CCA4D007E5E10 /* viewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CCCB0B8D175CC4C2007E5E10 /* Sources */ = {
+		CCCB0BD4175CC635007E5E10 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCCB0BA1175CC4C2007E5E10 /* main.m in Sources */,
-				CCCB0BA5175CC4C2007E5E10 /* hrtAppDelegate.m in Sources */,
-				CCCB0BB4175CC4C2007E5E10 /* hrtFirstViewController.m in Sources */,
-				CCCB0BBB175CC4C2007E5E10 /* hrtSecondViewController.m in Sources */,
-				CCCB0BCB175CC4DB007E5E10 /* IISideController.m in Sources */,
-				CCCB0BCC175CC4DB007E5E10 /* IIViewDeckController.m in Sources */,
-				CCCB0BCD175CC4DB007E5E10 /* IIWrapController.m in Sources */,
+				CCCB0BE8175CC635007E5E10 /* main.m in Sources */,
+				CCCB0BEC175CC635007E5E10 /* hrtAppDelegate.m in Sources */,
+				CCCB0BFB175CC635007E5E10 /* viewController.m in Sources */,
+				CCCB0C12175CC640007E5E10 /* IISideController.m in Sources */,
+				CCCB0C13175CC640007E5E10 /* IIViewDeckController.m in Sources */,
+				CCCB0C14175CC640007E5E10 /* IIWrapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCCB0B9D175CC4C2007E5E10 /* InfoPlist.strings */ = {
+		CCCB0BE4175CC635007E5E10 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CCCB0B9E175CC4C2007E5E10 /* en */,
+				CCCB0BE5175CC635007E5E10 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CCCB0BAC175CC4C2007E5E10 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCCB0BAD175CC4C2007E5E10 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		CCCB0BAF175CC4C2007E5E10 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCCB0BB0175CC4C2007E5E10 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CCCB0BC0175CC4C2007E5E10 /* Debug */ = {
+		CCCB0C07175CC635007E5E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -293,12 +272,13 @@
 			};
 			name = Debug;
 		};
-		CCCB0BC1175CC4C2007E5E10 /* Release */ = {
+		CCCB0C08175CC635007E5E10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -318,23 +298,23 @@
 			};
 			name = Release;
 		};
-		CCCB0BC3175CC4C2007E5E10 /* Debug */ = {
+		CCCB0C0A175CC635007E5E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "hrt/hrt-Prefix.pch";
-				INFOPLIST_FILE = "hrt/hrt-Info.plist";
+				GCC_PREFIX_HEADER = "HRT/HRT-Prefix.pch";
+				INFOPLIST_FILE = "HRT/HRT-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		CCCB0BC4175CC4C2007E5E10 /* Release */ = {
+		CCCB0C0B175CC635007E5E10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "hrt/hrt-Prefix.pch";
-				INFOPLIST_FILE = "hrt/hrt-Info.plist";
+				GCC_PREFIX_HEADER = "HRT/HRT-Prefix.pch";
+				INFOPLIST_FILE = "HRT/HRT-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -343,24 +323,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCCB0B8C175CC4C2007E5E10 /* Build configuration list for PBXProject "hrt" */ = {
+		CCCB0BD3175CC635007E5E10 /* Build configuration list for PBXProject "HRT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCCB0BC0175CC4C2007E5E10 /* Debug */,
-				CCCB0BC1175CC4C2007E5E10 /* Release */,
+				CCCB0C07175CC635007E5E10 /* Debug */,
+				CCCB0C08175CC635007E5E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCCB0BC2175CC4C2007E5E10 /* Build configuration list for PBXNativeTarget "hrt" */ = {
+		CCCB0C09175CC635007E5E10 /* Build configuration list for PBXNativeTarget "HRT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCCB0BC3175CC4C2007E5E10 /* Debug */,
-				CCCB0BC4175CC4C2007E5E10 /* Release */,
+				CCCB0C0A175CC635007E5E10 /* Debug */,
+				CCCB0C0B175CC635007E5E10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CCCB0B89175CC4C2007E5E10 /* Project object */;
+	rootObject = CCCB0BD0175CC635007E5E10 /* Project object */;
 }

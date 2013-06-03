@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CCCB0B90175CC4C2007E5E10"
-               BuildableName = "hrt.app"
-               BlueprintName = "hrt"
-               ReferencedContainer = "container:hrt.xcodeproj">
+               BlueprintIdentifier = "CCCB0BD7175CC635007E5E10"
+               BuildableName = "HRT.app"
+               BlueprintName = "HRT"
+               ReferencedContainer = "container:HRT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCCB0B90175CC4C2007E5E10"
-            BuildableName = "hrt.app"
-            BlueprintName = "hrt"
-            ReferencedContainer = "container:hrt.xcodeproj">
+            BlueprintIdentifier = "CCCB0BD7175CC635007E5E10"
+            BuildableName = "HRT.app"
+            BlueprintName = "HRT"
+            ReferencedContainer = "container:HRT.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCCB0B90175CC4C2007E5E10"
-            BuildableName = "hrt.app"
-            BlueprintName = "hrt"
-            ReferencedContainer = "container:hrt.xcodeproj">
+            BlueprintIdentifier = "CCCB0BD7175CC635007E5E10"
+            BuildableName = "HRT.app"
+            BlueprintName = "HRT"
+            ReferencedContainer = "container:HRT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CCCB0B90175CC4C2007E5E10"
-            BuildableName = "hrt.app"
-            BlueprintName = "hrt"
-            ReferencedContainer = "container:hrt.xcodeproj">
+            BlueprintIdentifier = "CCCB0BD7175CC635007E5E10"
+            BuildableName = "HRT.app"
+            BlueprintName = "HRT"
+            ReferencedContainer = "container:HRT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
