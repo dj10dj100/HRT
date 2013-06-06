@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WFConnector/WFConnector.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate,UINavigationControllerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate,UINavigationControllerDelegate,WFHardwareConnectorDelegate>
+{
+    WFHardwareConnector* hardwareConnector;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
 //check for certain devices

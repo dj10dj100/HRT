@@ -29,6 +29,52 @@
 		6D315BB8175E7F2B00AE0DEB /* tabBarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D315BB7175E7F2B00AE0DEB /* tabBarBG.png */; };
 		6D315BC2175E8DF300AE0DEB /* JennaSue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D315BC1175E8DF300AE0DEB /* JennaSue.ttf */; };
 		6D315BC5175E917800AE0DEB /* heart-568h@2x in Resources */ = {isa = PBXBuildFile; fileRef = 6D315BC4175E917800AE0DEB /* heart-568h@2x */; };
+		6D315BCA175FBE7200AE0DEB /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D315BC8175FBE7200AE0DEB /* ThirdViewController.xib */; };
+		6D315BCF175FBF1E00AE0DEB /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D315BCE175FBF1E00AE0DEB /* ThirdViewController.m */; };
+		6D315BD6175FC41400AE0DEB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D315BD5175FC41400AE0DEB /* CoreBluetooth.framework */; };
+		6D315BD8175FC46B00AE0DEB /* WFConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D315BD7175FC46B00AE0DEB /* WFConnector.framework */; };
+		6D315BDA175FC91700AE0DEB /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D315BD9175FC91700AE0DEB /* ExternalAccessory.framework */; };
+		6D8BAADF176125AA005AB3DB /* ANTBTOverviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAA89176125A9005AB3DB /* ANTBTOverviewVC.m */; };
+		6D8BAAE3176125AA005AB3DB /* HeartrateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAA91176125A9005AB3DB /* HeartrateViewController.m */; };
+		6D8BAAE5176125AA005AB3DB /* DeviceDiscoveryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAA95176125A9005AB3DB /* DeviceDiscoveryVC.m */; };
+		6D8BAAE6176125AA005AB3DB /* ANTBTOverviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAA97176125A9005AB3DB /* ANTBTOverviewVC.xib */; };
+		6D8BAAE7176125AA005AB3DB /* ANTDeviceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAA99176125A9005AB3DB /* ANTDeviceInfoVC.xib */; };
+		6D8BAAE8176125AA005AB3DB /* ANTFSSelectVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAA9B176125A9005AB3DB /* ANTFSSelectVC.xib */; };
+		6D8BAAE9176125AA005AB3DB /* ANTOverviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAA9D176125A9005AB3DB /* ANTOverviewVC.xib */; };
+		6D8BAAEA176125AA005AB3DB /* AntViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAA9F176125A9005AB3DB /* AntViewController.xib */; };
+		6D8BAAEB176125AA005AB3DB /* AudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAA1176125A9005AB3DB /* AudioViewController.xib */; };
+		6D8BAAEC176125AA005AB3DB /* BikeCadenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAA3176125A9005AB3DB /* BikeCadenceViewController.xib */; };
+		6D8BAAED176125AA005AB3DB /* BikePowerCalibration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAA5176125A9005AB3DB /* BikePowerCalibration.xib */; };
+		6D8BAAEE176125AA005AB3DB /* BikePowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAA7176125A9005AB3DB /* BikePowerViewController.xib */; };
+		6D8BAAEF176125AA005AB3DB /* BikeSpeedCadenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAA9176125A9005AB3DB /* BikeSpeedCadenceViewController.xib */; };
+		6D8BAAF0176125AA005AB3DB /* BikeSpeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAAB176125A9005AB3DB /* BikeSpeedViewController.xib */; };
+		6D8BAAF1176125AA005AB3DB /* BloodPressureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAAD176125A9005AB3DB /* BloodPressureViewController.xib */; };
+		6D8BAAF2176125AA005AB3DB /* BPHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAAF176125A9005AB3DB /* BPHistoryViewController.xib */; };
+		6D8BAAF3176125AA005AB3DB /* BTBloodPressureVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAB1176125A9005AB3DB /* BTBloodPressureVC.xib */; };
+		6D8BAAF4176125AA005AB3DB /* BTDeviceInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAB3176125A9005AB3DB /* BTDeviceInfoVC.xib */; };
+		6D8BAAF5176125AA005AB3DB /* BTGlucoseDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAB5176125A9005AB3DB /* BTGlucoseDetailVC.xib */; };
+		6D8BAAF6176125AA005AB3DB /* BTGlucoseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAB7176125A9005AB3DB /* BTGlucoseVC.xib */; };
+		6D8BAAF7176125AA005AB3DB /* BTOverviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAB9176125A9005AB3DB /* BTOverviewVC.xib */; };
+		6D8BAAF8176125AA005AB3DB /* CommandChooserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAABB176125A9005AB3DB /* CommandChooserController.xib */; };
+		6D8BAAF9176125AA005AB3DB /* DeviceDiscoveryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAABD176125A9005AB3DB /* DeviceDiscoveryVC.xib */; };
+		6D8BAAFA176125AA005AB3DB /* FootpodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAABF176125A9005AB3DB /* FootpodViewController.xib */; };
+		6D8BAAFB176125AA005AB3DB /* GlucoseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAC1176125A9005AB3DB /* GlucoseVC.xib */; };
+		6D8BAAFC176125AA005AB3DB /* HeartrateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAC3176125A9005AB3DB /* HeartrateViewController.xib */; };
+		6D8BAAFD176125AA005AB3DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAC5176125A9005AB3DB /* InfoPlist.strings */; };
+		6D8BAAFE176125AA005AB3DB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAC7176125A9005AB3DB /* MainWindow.xib */; };
+		6D8BAAFF176125AA005AB3DB /* OdometerHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAC9176125A9005AB3DB /* OdometerHistoryVC.xib */; };
+		6D8BAB00176125AA005AB3DB /* ProximityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAACB176125A9005AB3DB /* ProximityViewController.xib */; };
+		6D8BAB01176125AA005AB3DB /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAACD176125A9005AB3DB /* RootViewController.xib */; };
+		6D8BAB02176125AA005AB3DB /* SensorManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAACF176125A9005AB3DB /* SensorManagerViewController.xib */; };
+		6D8BAB03176125AA005AB3DB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAD1176125A9005AB3DB /* SettingsViewController.xib */; };
+		6D8BAB04176125AA005AB3DB /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAD3176125A9005AB3DB /* TemperatureViewController.xib */; };
+		6D8BAB05176125AA005AB3DB /* WeightHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAD5176125AA005AB3DB /* WeightHistoryViewController.xib */; };
+		6D8BAB06176125AA005AB3DB /* WeightScaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAAD7176125AA005AB3DB /* WeightScaleViewController.xib */; };
+		6D8BAB07176125AA005AB3DB /* SensorManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAADA176125AA005AB3DB /* SensorManagerViewController.m */; };
+		6D8BAB08176125AA005AB3DB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAADC176125AA005AB3DB /* SettingsViewController.m */; };
+		6D8BAB09176125AA005AB3DB /* WFSensorCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAADE176125AA005AB3DB /* WFSensorCommonViewController.m */; };
+		6D8BAB0C17612D15005AB3DB /* BTDeviceInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAB0B17612D15005AB3DB /* BTDeviceInfoVC.m */; };
+		6D8BAB1017613D9B005AB3DB /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAB0F17613D9B005AB3DB /* icon-114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +106,60 @@
 		6D315BB7175E7F2B00AE0DEB /* tabBarBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabBarBG.png; path = APP_IMAGERY/tabBarBG.png; sourceTree = SOURCE_ROOT; };
 		6D315BC1175E8DF300AE0DEB /* JennaSue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = JennaSue.ttf; path = FONTS/JennaSue.ttf; sourceTree = SOURCE_ROOT; };
 		6D315BC4175E917800AE0DEB /* heart-568h@2x */ = {isa = PBXFileReference; lastKnownFileType = file; name = "heart-568h@2x"; path = "APP_IMAGERY/heart-568h@2x"; sourceTree = SOURCE_ROOT; };
+		6D315BC9175FBE7200AE0DEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ThirdViewController.xib; sourceTree = "<group>"; };
+		6D315BCD175FBEDD00AE0DEB /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		6D315BCE175FBF1E00AE0DEB /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		6D315BD5175FC41400AE0DEB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6D315BD7175FC46B00AE0DEB /* WFConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WFConnector.framework; path = ../wahoo/dependencies/WFConnector.framework; sourceTree = "<group>"; };
+		6D315BD9175FC91700AE0DEB /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		6D8BAA88176125A9005AB3DB /* ANTBTOverviewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTBTOverviewVC.h; sourceTree = "<group>"; };
+		6D8BAA89176125A9005AB3DB /* ANTBTOverviewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTBTOverviewVC.m; sourceTree = "<group>"; };
+		6D8BAA90176125A9005AB3DB /* HeartrateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeartrateViewController.h; path = ../../wahoo/WahooDemobase/WahooDemo/ANTorBT/HeartrateViewController.h; sourceTree = "<group>"; };
+		6D8BAA91176125A9005AB3DB /* HeartrateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeartrateViewController.m; path = ../../wahoo/WahooDemobase/WahooDemo/ANTorBT/HeartrateViewController.m; sourceTree = "<group>"; };
+		6D8BAA94176125A9005AB3DB /* DeviceDiscoveryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceDiscoveryVC.h; path = ../../wahoo/WahooDemobase/WahooDemo/DeviceDiscoveryVC.h; sourceTree = "<group>"; };
+		6D8BAA95176125A9005AB3DB /* DeviceDiscoveryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceDiscoveryVC.m; path = ../../wahoo/WahooDemobase/WahooDemo/DeviceDiscoveryVC.m; sourceTree = "<group>"; };
+		6D8BAA98176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ANTBTOverviewVC.xib; sourceTree = "<group>"; };
+		6D8BAA9A176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ANTDeviceInfoVC.xib; sourceTree = "<group>"; };
+		6D8BAA9C176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ANTFSSelectVC.xib; sourceTree = "<group>"; };
+		6D8BAA9E176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ANTOverviewVC.xib; sourceTree = "<group>"; };
+		6D8BAAA0176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = AntViewController.xib; sourceTree = "<group>"; };
+		6D8BAAA2176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = AudioViewController.xib; sourceTree = "<group>"; };
+		6D8BAAA4176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BikeCadenceViewController.xib; sourceTree = "<group>"; };
+		6D8BAAA6176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BikePowerCalibration.xib; sourceTree = "<group>"; };
+		6D8BAAA8176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BikePowerViewController.xib; sourceTree = "<group>"; };
+		6D8BAAAA176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BikeSpeedCadenceViewController.xib; sourceTree = "<group>"; };
+		6D8BAAAC176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BikeSpeedViewController.xib; sourceTree = "<group>"; };
+		6D8BAAAE176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		6D8BAAB0176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BPHistoryViewController.xib; sourceTree = "<group>"; };
+		6D8BAAB2176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BTBloodPressureVC.xib; sourceTree = "<group>"; };
+		6D8BAAB4176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BTDeviceInfoVC.xib; sourceTree = "<group>"; };
+		6D8BAAB6176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BTGlucoseDetailVC.xib; sourceTree = "<group>"; };
+		6D8BAAB8176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BTGlucoseVC.xib; sourceTree = "<group>"; };
+		6D8BAABA176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = BTOverviewVC.xib; sourceTree = "<group>"; };
+		6D8BAABC176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CommandChooserController.xib; sourceTree = "<group>"; };
+		6D8BAABE176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = DeviceDiscoveryVC.xib; sourceTree = "<group>"; };
+		6D8BAAC0176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = FootpodViewController.xib; sourceTree = "<group>"; };
+		6D8BAAC2176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = GlucoseVC.xib; sourceTree = "<group>"; };
+		6D8BAAC4176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = HeartrateViewController.xib; sourceTree = "<group>"; };
+		6D8BAAC6176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		6D8BAAC8176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		6D8BAACA176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = OdometerHistoryVC.xib; sourceTree = "<group>"; };
+		6D8BAACC176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ProximityViewController.xib; sourceTree = "<group>"; };
+		6D8BAACE176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD0176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = SensorManagerViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD2176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD4176125A9005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = TemperatureViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD6176125AA005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = WeightHistoryViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD8176125AA005AB3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = WeightScaleViewController.xib; sourceTree = "<group>"; };
+		6D8BAAD9176125AA005AB3DB /* SensorManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorManagerViewController.h; path = ../../wahoo/WahooDemobase/WahooDemo/SensorManagerViewController.h; sourceTree = "<group>"; };
+		6D8BAADA176125AA005AB3DB /* SensorManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorManagerViewController.m; path = ../../wahoo/WahooDemobase/WahooDemo/SensorManagerViewController.m; sourceTree = "<group>"; };
+		6D8BAADB176125AA005AB3DB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../../wahoo/WahooDemobase/WahooDemo/SettingsViewController.h; sourceTree = "<group>"; };
+		6D8BAADC176125AA005AB3DB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../../wahoo/WahooDemobase/WahooDemo/SettingsViewController.m; sourceTree = "<group>"; };
+		6D8BAADD176125AA005AB3DB /* WFSensorCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WFSensorCommonViewController.h; path = ../../wahoo/WahooDemobase/WahooDemo/WFSensorCommonViewController.h; sourceTree = "<group>"; };
+		6D8BAADE176125AA005AB3DB /* WFSensorCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WFSensorCommonViewController.m; path = ../../wahoo/WahooDemobase/WahooDemo/WFSensorCommonViewController.m; sourceTree = "<group>"; };
+		6D8BAB0A17612D15005AB3DB /* BTDeviceInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTDeviceInfoVC.h; path = ../../wahoo/WahooDemoScale/WahooDemo/BTSmart/BTDeviceInfoVC.h; sourceTree = "<group>"; };
+		6D8BAB0B17612D15005AB3DB /* BTDeviceInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTDeviceInfoVC.m; path = ../../wahoo/WahooDemoScale/WahooDemo/BTSmart/BTDeviceInfoVC.m; sourceTree = "<group>"; };
+		6D8BAB0F17613D9B005AB3DB /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +167,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D315BDA175FC91700AE0DEB /* ExternalAccessory.framework in Frameworks */,
+				6D315BD8175FC46B00AE0DEB /* WFConnector.framework in Frameworks */,
+				6D315BD6175FC41400AE0DEB /* CoreBluetooth.framework in Frameworks */,
 				6D315B82175E642800AE0DEB /* UIKit.framework in Frameworks */,
 				6D315B84175E642800AE0DEB /* Foundation.framework in Frameworks */,
 				6D315B86175E642800AE0DEB /* CoreGraphics.framework in Frameworks */,
@@ -79,6 +182,7 @@
 		6D315B75175E642800AE0DEB = {
 			isa = PBXGroup;
 			children = (
+				6D8BAB0F17613D9B005AB3DB /* icon-114.png */,
 				6D315B87175E642800AE0DEB /* hrtz */,
 				6D315B80175E642800AE0DEB /* Frameworks */,
 				6D315B7F175E642800AE0DEB /* Products */,
@@ -96,6 +200,7 @@
 		6D315B80175E642800AE0DEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D315BD4175FC3CD00AE0DEB /* WAHOO_FRAMEWORKS */,
 				6D315B81175E642800AE0DEB /* UIKit.framework */,
 				6D315B83175E642800AE0DEB /* Foundation.framework */,
 				6D315B85175E642800AE0DEB /* CoreGraphics.framework */,
@@ -106,6 +211,8 @@
 		6D315B87175E642800AE0DEB /* hrtz */ = {
 			isa = PBXGroup;
 			children = (
+				6D8BAB0D17612D47005AB3DB /* HR */,
+				6D8BAB0E17612D4E005AB3DB /* BT */,
 				6D315BC3175E8DF900AE0DEB /* FONTS */,
 				6D315BB2175E659B00AE0DEB /* IMAGES */,
 				6D315B90175E642800AE0DEB /* AppDelegate.h */,
@@ -116,10 +223,14 @@
 				6D315B9E175E642800AE0DEB /* first@2x.png */,
 				6D315BA0175E642800AE0DEB /* SecondViewController.h */,
 				6D315BA1175E642800AE0DEB /* SecondViewController.m */,
+				6D315BCE175FBF1E00AE0DEB /* ThirdViewController.m */,
+				6D315BCD175FBEDD00AE0DEB /* ThirdViewController.h */,
 				6D315BA3175E642800AE0DEB /* second.png */,
 				6D315BA5175E642800AE0DEB /* second@2x.png */,
 				6D315BA7175E642800AE0DEB /* FirstViewController.xib */,
+				6D8BAA8617612574005AB3DB /* WahooFullApi */,
 				6D315BAA175E642800AE0DEB /* SecondViewController.xib */,
+				6D315BC8175FBE7200AE0DEB /* ThirdViewController.xib */,
 				6D315B88175E642800AE0DEB /* Supporting Files */,
 			);
 			path = hrtz;
@@ -156,6 +267,102 @@
 				6D315BC1175E8DF300AE0DEB /* JennaSue.ttf */,
 			);
 			name = FONTS;
+			sourceTree = "<group>";
+		};
+		6D315BD4175FC3CD00AE0DEB /* WAHOO_FRAMEWORKS */ = {
+			isa = PBXGroup;
+			children = (
+				6D315BD9175FC91700AE0DEB /* ExternalAccessory.framework */,
+				6D315BD7175FC46B00AE0DEB /* WFConnector.framework */,
+				6D315BD5175FC41400AE0DEB /* CoreBluetooth.framework */,
+			);
+			name = WAHOO_FRAMEWORKS;
+			sourceTree = "<group>";
+		};
+		6D8BAA8617612574005AB3DB /* WahooFullApi */ = {
+			isa = PBXGroup;
+			children = (
+				6D8BAA87176125A9005AB3DB /* ANTorBT */,
+				6D8BAA94176125A9005AB3DB /* DeviceDiscoveryVC.h */,
+				6D8BAA95176125A9005AB3DB /* DeviceDiscoveryVC.m */,
+				6D8BAA96176125A9005AB3DB /* en.lproj */,
+				6D8BAAD9176125AA005AB3DB /* SensorManagerViewController.h */,
+				6D8BAADA176125AA005AB3DB /* SensorManagerViewController.m */,
+				6D8BAADB176125AA005AB3DB /* SettingsViewController.h */,
+				6D8BAADC176125AA005AB3DB /* SettingsViewController.m */,
+				6D8BAADD176125AA005AB3DB /* WFSensorCommonViewController.h */,
+				6D8BAADE176125AA005AB3DB /* WFSensorCommonViewController.m */,
+			);
+			name = WahooFullApi;
+			sourceTree = "<group>";
+		};
+		6D8BAA87176125A9005AB3DB /* ANTorBT */ = {
+			isa = PBXGroup;
+			children = (
+				6D8BAA88176125A9005AB3DB /* ANTBTOverviewVC.h */,
+				6D8BAA89176125A9005AB3DB /* ANTBTOverviewVC.m */,
+			);
+			name = ANTorBT;
+			path = ../../wahoo/WahooDemobase/WahooDemo/ANTorBT;
+			sourceTree = "<group>";
+		};
+		6D8BAA96176125A9005AB3DB /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6D8BAA97176125A9005AB3DB /* ANTBTOverviewVC.xib */,
+				6D8BAA99176125A9005AB3DB /* ANTDeviceInfoVC.xib */,
+				6D8BAA9B176125A9005AB3DB /* ANTFSSelectVC.xib */,
+				6D8BAA9D176125A9005AB3DB /* ANTOverviewVC.xib */,
+				6D8BAA9F176125A9005AB3DB /* AntViewController.xib */,
+				6D8BAAA1176125A9005AB3DB /* AudioViewController.xib */,
+				6D8BAAA3176125A9005AB3DB /* BikeCadenceViewController.xib */,
+				6D8BAAA5176125A9005AB3DB /* BikePowerCalibration.xib */,
+				6D8BAAA7176125A9005AB3DB /* BikePowerViewController.xib */,
+				6D8BAAA9176125A9005AB3DB /* BikeSpeedCadenceViewController.xib */,
+				6D8BAAAB176125A9005AB3DB /* BikeSpeedViewController.xib */,
+				6D8BAAAD176125A9005AB3DB /* BloodPressureViewController.xib */,
+				6D8BAAAF176125A9005AB3DB /* BPHistoryViewController.xib */,
+				6D8BAAB1176125A9005AB3DB /* BTBloodPressureVC.xib */,
+				6D8BAAB3176125A9005AB3DB /* BTDeviceInfoVC.xib */,
+				6D8BAAB5176125A9005AB3DB /* BTGlucoseDetailVC.xib */,
+				6D8BAAB7176125A9005AB3DB /* BTGlucoseVC.xib */,
+				6D8BAAB9176125A9005AB3DB /* BTOverviewVC.xib */,
+				6D8BAABB176125A9005AB3DB /* CommandChooserController.xib */,
+				6D8BAABD176125A9005AB3DB /* DeviceDiscoveryVC.xib */,
+				6D8BAABF176125A9005AB3DB /* FootpodViewController.xib */,
+				6D8BAAC1176125A9005AB3DB /* GlucoseVC.xib */,
+				6D8BAAC5176125A9005AB3DB /* InfoPlist.strings */,
+				6D8BAAC7176125A9005AB3DB /* MainWindow.xib */,
+				6D8BAAC9176125A9005AB3DB /* OdometerHistoryVC.xib */,
+				6D8BAACB176125A9005AB3DB /* ProximityViewController.xib */,
+				6D8BAACD176125A9005AB3DB /* RootViewController.xib */,
+				6D8BAACF176125A9005AB3DB /* SensorManagerViewController.xib */,
+				6D8BAAD1176125A9005AB3DB /* SettingsViewController.xib */,
+				6D8BAAD3176125A9005AB3DB /* TemperatureViewController.xib */,
+				6D8BAAD5176125AA005AB3DB /* WeightHistoryViewController.xib */,
+				6D8BAAD7176125AA005AB3DB /* WeightScaleViewController.xib */,
+			);
+			name = en.lproj;
+			path = ../../wahoo/WahooDemobase/WahooDemo/en.lproj;
+			sourceTree = "<group>";
+		};
+		6D8BAB0D17612D47005AB3DB /* HR */ = {
+			isa = PBXGroup;
+			children = (
+				6D8BAA90176125A9005AB3DB /* HeartrateViewController.h */,
+				6D8BAA91176125A9005AB3DB /* HeartrateViewController.m */,
+				6D8BAAC3176125A9005AB3DB /* HeartrateViewController.xib */,
+			);
+			name = HR;
+			sourceTree = "<group>";
+		};
+		6D8BAB0E17612D4E005AB3DB /* BT */ = {
+			isa = PBXGroup;
+			children = (
+				6D8BAB0A17612D15005AB3DB /* BTDeviceInfoVC.h */,
+				6D8BAB0B17612D15005AB3DB /* BTDeviceInfoVC.m */,
+			);
+			name = BT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +431,41 @@
 				6D315BB8175E7F2B00AE0DEB /* tabBarBG.png in Resources */,
 				6D315BC2175E8DF300AE0DEB /* JennaSue.ttf in Resources */,
 				6D315BC5175E917800AE0DEB /* heart-568h@2x in Resources */,
+				6D315BCA175FBE7200AE0DEB /* ThirdViewController.xib in Resources */,
+				6D8BAAE6176125AA005AB3DB /* ANTBTOverviewVC.xib in Resources */,
+				6D8BAAE7176125AA005AB3DB /* ANTDeviceInfoVC.xib in Resources */,
+				6D8BAAE8176125AA005AB3DB /* ANTFSSelectVC.xib in Resources */,
+				6D8BAAE9176125AA005AB3DB /* ANTOverviewVC.xib in Resources */,
+				6D8BAAEA176125AA005AB3DB /* AntViewController.xib in Resources */,
+				6D8BAAEB176125AA005AB3DB /* AudioViewController.xib in Resources */,
+				6D8BAAEC176125AA005AB3DB /* BikeCadenceViewController.xib in Resources */,
+				6D8BAAED176125AA005AB3DB /* BikePowerCalibration.xib in Resources */,
+				6D8BAAEE176125AA005AB3DB /* BikePowerViewController.xib in Resources */,
+				6D8BAAEF176125AA005AB3DB /* BikeSpeedCadenceViewController.xib in Resources */,
+				6D8BAAF0176125AA005AB3DB /* BikeSpeedViewController.xib in Resources */,
+				6D8BAAF1176125AA005AB3DB /* BloodPressureViewController.xib in Resources */,
+				6D8BAAF2176125AA005AB3DB /* BPHistoryViewController.xib in Resources */,
+				6D8BAAF3176125AA005AB3DB /* BTBloodPressureVC.xib in Resources */,
+				6D8BAAF4176125AA005AB3DB /* BTDeviceInfoVC.xib in Resources */,
+				6D8BAAF5176125AA005AB3DB /* BTGlucoseDetailVC.xib in Resources */,
+				6D8BAAF6176125AA005AB3DB /* BTGlucoseVC.xib in Resources */,
+				6D8BAAF7176125AA005AB3DB /* BTOverviewVC.xib in Resources */,
+				6D8BAAF8176125AA005AB3DB /* CommandChooserController.xib in Resources */,
+				6D8BAAF9176125AA005AB3DB /* DeviceDiscoveryVC.xib in Resources */,
+				6D8BAAFA176125AA005AB3DB /* FootpodViewController.xib in Resources */,
+				6D8BAAFB176125AA005AB3DB /* GlucoseVC.xib in Resources */,
+				6D8BAAFC176125AA005AB3DB /* HeartrateViewController.xib in Resources */,
+				6D8BAAFD176125AA005AB3DB /* InfoPlist.strings in Resources */,
+				6D8BAAFE176125AA005AB3DB /* MainWindow.xib in Resources */,
+				6D8BAAFF176125AA005AB3DB /* OdometerHistoryVC.xib in Resources */,
+				6D8BAB00176125AA005AB3DB /* ProximityViewController.xib in Resources */,
+				6D8BAB01176125AA005AB3DB /* RootViewController.xib in Resources */,
+				6D8BAB02176125AA005AB3DB /* SensorManagerViewController.xib in Resources */,
+				6D8BAB03176125AA005AB3DB /* SettingsViewController.xib in Resources */,
+				6D8BAB04176125AA005AB3DB /* TemperatureViewController.xib in Resources */,
+				6D8BAB05176125AA005AB3DB /* WeightHistoryViewController.xib in Resources */,
+				6D8BAB06176125AA005AB3DB /* WeightScaleViewController.xib in Resources */,
+				6D8BAB1017613D9B005AB3DB /* icon-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +480,14 @@
 				6D315B92175E642800AE0DEB /* AppDelegate.m in Sources */,
 				6D315B9B175E642800AE0DEB /* FirstViewController.m in Sources */,
 				6D315BA2175E642800AE0DEB /* SecondViewController.m in Sources */,
+				6D315BCF175FBF1E00AE0DEB /* ThirdViewController.m in Sources */,
+				6D8BAADF176125AA005AB3DB /* ANTBTOverviewVC.m in Sources */,
+				6D8BAAE3176125AA005AB3DB /* HeartrateViewController.m in Sources */,
+				6D8BAAE5176125AA005AB3DB /* DeviceDiscoveryVC.m in Sources */,
+				6D8BAB07176125AA005AB3DB /* SensorManagerViewController.m in Sources */,
+				6D8BAB08176125AA005AB3DB /* SettingsViewController.m in Sources */,
+				6D8BAB09176125AA005AB3DB /* WFSensorCommonViewController.m in Sources */,
+				6D8BAB0C17612D15005AB3DB /* BTDeviceInfoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +516,279 @@
 				6D315BAB175E642800AE0DEB /* en */,
 			);
 			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D315BC8175FBE7200AE0DEB /* ThirdViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D315BC9175FBE7200AE0DEB /* en */,
+			);
+			name = ThirdViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAA97176125A9005AB3DB /* ANTBTOverviewVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAA98176125A9005AB3DB /* en */,
+			);
+			name = ANTBTOverviewVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAA99176125A9005AB3DB /* ANTDeviceInfoVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAA9A176125A9005AB3DB /* en */,
+			);
+			name = ANTDeviceInfoVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAA9B176125A9005AB3DB /* ANTFSSelectVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAA9C176125A9005AB3DB /* en */,
+			);
+			name = ANTFSSelectVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAA9D176125A9005AB3DB /* ANTOverviewVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAA9E176125A9005AB3DB /* en */,
+			);
+			name = ANTOverviewVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAA9F176125A9005AB3DB /* AntViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAA0176125A9005AB3DB /* en */,
+			);
+			name = AntViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAA1176125A9005AB3DB /* AudioViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAA2176125A9005AB3DB /* en */,
+			);
+			name = AudioViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAA3176125A9005AB3DB /* BikeCadenceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAA4176125A9005AB3DB /* en */,
+			);
+			name = BikeCadenceViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAA5176125A9005AB3DB /* BikePowerCalibration.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAA6176125A9005AB3DB /* en */,
+			);
+			name = BikePowerCalibration.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAA7176125A9005AB3DB /* BikePowerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAA8176125A9005AB3DB /* en */,
+			);
+			name = BikePowerViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAA9176125A9005AB3DB /* BikeSpeedCadenceViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAAA176125A9005AB3DB /* en */,
+			);
+			name = BikeSpeedCadenceViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAAB176125A9005AB3DB /* BikeSpeedViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAAC176125A9005AB3DB /* en */,
+			);
+			name = BikeSpeedViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAAD176125A9005AB3DB /* BloodPressureViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAAE176125A9005AB3DB /* en */,
+			);
+			name = BloodPressureViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAAF176125A9005AB3DB /* BPHistoryViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAB0176125A9005AB3DB /* en */,
+			);
+			name = BPHistoryViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAB1176125A9005AB3DB /* BTBloodPressureVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAB2176125A9005AB3DB /* en */,
+			);
+			name = BTBloodPressureVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAB3176125A9005AB3DB /* BTDeviceInfoVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAB4176125A9005AB3DB /* en */,
+			);
+			name = BTDeviceInfoVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAB5176125A9005AB3DB /* BTGlucoseDetailVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAB6176125A9005AB3DB /* en */,
+			);
+			name = BTGlucoseDetailVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAB7176125A9005AB3DB /* BTGlucoseVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAB8176125A9005AB3DB /* en */,
+			);
+			name = BTGlucoseVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAB9176125A9005AB3DB /* BTOverviewVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAABA176125A9005AB3DB /* en */,
+			);
+			name = BTOverviewVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAABB176125A9005AB3DB /* CommandChooserController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAABC176125A9005AB3DB /* en */,
+			);
+			name = CommandChooserController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAABD176125A9005AB3DB /* DeviceDiscoveryVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAABE176125A9005AB3DB /* en */,
+			);
+			name = DeviceDiscoveryVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAABF176125A9005AB3DB /* FootpodViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAC0176125A9005AB3DB /* en */,
+			);
+			name = FootpodViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAC1176125A9005AB3DB /* GlucoseVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAC2176125A9005AB3DB /* en */,
+			);
+			name = GlucoseVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAC3176125A9005AB3DB /* HeartrateViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAC4176125A9005AB3DB /* en */,
+			);
+			name = HeartrateViewController.xib;
+			path = ../../wahoo/WahooDemobase/WahooDemo/en.lproj;
+			sourceTree = "<group>";
+		};
+		6D8BAAC5176125A9005AB3DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAC6176125A9005AB3DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6D8BAAC7176125A9005AB3DB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAC8176125A9005AB3DB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAC9176125A9005AB3DB /* OdometerHistoryVC.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAACA176125A9005AB3DB /* en */,
+			);
+			name = OdometerHistoryVC.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAACB176125A9005AB3DB /* ProximityViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAACC176125A9005AB3DB /* en */,
+			);
+			name = ProximityViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAACD176125A9005AB3DB /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAACE176125A9005AB3DB /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAACF176125A9005AB3DB /* SensorManagerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAD0176125A9005AB3DB /* en */,
+			);
+			name = SensorManagerViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAD1176125A9005AB3DB /* SettingsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAD2176125A9005AB3DB /* en */,
+			);
+			name = SettingsViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAD3176125A9005AB3DB /* TemperatureViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAD4176125A9005AB3DB /* en */,
+			);
+			name = TemperatureViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAD5176125AA005AB3DB /* WeightHistoryViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAD6176125AA005AB3DB /* en */,
+			);
+			name = WeightHistoryViewController.xib;
+			sourceTree = "<group>";
+		};
+		6D8BAAD7176125AA005AB3DB /* WeightScaleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D8BAAD8176125AA005AB3DB /* en */,
+			);
+			name = WeightScaleViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,9 +853,17 @@
 		6D315BB0175E642800AE0DEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../wahoo/dependencies\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hrtz/hrtz-Prefix.pch";
 				INFOPLIST_FILE = "hrtz/hrtz-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -341,9 +872,17 @@
 		6D315BB1175E642800AE0DEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../wahoo/dependencies\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hrtz/hrtz-Prefix.pch";
 				INFOPLIST_FILE = "hrtz/hrtz-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,6 +907,7 @@
 				6D315BB1175E642800AE0DEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

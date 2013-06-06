@@ -8,9 +8,11 @@
 
 #import "FirstViewController.h"
 
+
 @interface FirstViewController ()
 
 @end
+
 
 @implementation FirstViewController
 
@@ -19,25 +21,35 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
     if (self) {
-        
+            
         //declare setting up screen
         [self setUpScreen];
 
     }
     return self;
 }
+
+
+
 							
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 //declare what this view controller looks like
 -(void)setUpScreen
@@ -78,5 +90,11 @@
     
 
 }
+
+
+
+
+
+
 
 @end
