@@ -26,6 +26,11 @@
 @synthesize maxHeartrateLabel;
 @synthesize minHeartrateLabel;
 
+//max
+float max = 1.00;
+float min = 1000.00;
+float hr = 10.0;
+
 
 #pragma mark -
 #pragma mark UIViewController Implementation
@@ -101,13 +106,9 @@
     
 	WFHeartrateData* hrData = [self.heartrateConnection getHeartrateData];
     
-    NSMutableArray* heartBeat = [[NSMutableArray alloc] init];
-    NSString* test = @"Daniel Jenkins made this";
+    //NSMutableArray* heartBeat = [[NSMutableArray alloc] init];
     
-    //max 
-    int max = 1.0;
-    int min = 1000;
-    int hr = 0.0;
+
     
 	if ( hrData != nil )
 	{
@@ -118,11 +119,16 @@
         // unformatted value.
 		// computedHeartrateLabel.text = [NSString stringWithFormat:@"%d", hrData.computedHeartrate];
         
-        //store current HR in variable;
-        hr = hrData.computedHeartrate;
         
+        
+        NSString* heartBeat = [hrData formattedHeartrate:TRUE];
+        
+        //store current HR in variable;
+        hr = [heartBeat floatValue];
+
         // update basic data.
         computedHeartrateLabel.text = [hrData formattedHeartrate:TRUE];
+        
         
         //set min hr
         if(hr > max){
@@ -130,13 +136,9 @@
             //min is int
             max = hr;
             
-            //convert int to NSString
-            NSString *max;
-            NSMutableString *maxString = [NSMutableString string];
-            max = [NSString stringWithFormat:@"%d",hr]; //%d or %i both is ok.
-            [maxString appendString:max];
+            NSLog(@"Max :%f", max);
             
-            maxHeartrateLabel.text = maxString;
+            maxHeartrateLabel.text = [NSString stringWithFormat:@"%f",max];
             
         }//set min
                
@@ -148,29 +150,22 @@
             //min is int
             min = hr;
             
-            //convert int to NSString
-            NSString *str;
-            NSMutableString *myString = [NSMutableString string];
-            str = [NSString stringWithFormat:@"%d",hr]; //%d or %i both is ok.
-            [myString appendString:str];            
-            
-            minHeartrateLabel.text = myString;
+            minHeartrateLabel.text = [NSString stringWithFormat:@"%f",min];
 
-        }//set min
-        
+        }//set min    
         
 
 
         
-        NSMutableArray *curRow = [[NSMutableArray alloc] init];; /* use to access the row while loading with objects */
-        [curRow addObject:[hrData formattedHeartrate:TRUE]];
-        [curRow addObject:test];        
-        [heartBeat addObject:curRow]; /* first row is added */
-         NSLog(@"%@",heartBeat);
-        
+       // NSMutableArray *curRow = [[NSMutableArray alloc] init];; /* use to access the row while loading with objects */
+        //[curRow addObject:[hrData formattedHeartrate:TRUE]];
+        //[curRow addObject:maxString];
+        //[heartBeat addObject:curRow]; /* first row is added */
+        //NSLog(@"%@",heartBeat);
+
 
 	}
-	else 
+	else
 	{
 		[self resetDisplay];
 	}
