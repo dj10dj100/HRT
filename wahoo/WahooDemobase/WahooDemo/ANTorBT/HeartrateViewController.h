@@ -38,6 +38,18 @@
 @property (retain, nonatomic) IBOutlet UILabel* maxHeartrateLabel;
 @property (retain, nonatomic) IBOutlet UILabel* minHeartrateLabel;
 
+@property (retain, nonatomic) IBOutlet UILabel* zone1;
+@property (retain, nonatomic) IBOutlet UILabel* zone2;
+@property (retain, nonatomic) IBOutlet UILabel* zone3;
+@property (retain, nonatomic) IBOutlet UILabel* zone4;
+@property (retain, nonatomic) IBOutlet UILabel* zone5;
 
+
+
+//calculate with the heartRate Method
+-(float) calculateHeartRate:(float) heartRate;
+
+//calculateZones
+-(void)calculateZones:(float)min :(float)max;
 
 @end

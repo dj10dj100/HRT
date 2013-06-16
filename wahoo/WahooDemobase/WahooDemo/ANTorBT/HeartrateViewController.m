@@ -26,6 +26,13 @@
 @synthesize maxHeartrateLabel;
 @synthesize minHeartrateLabel;
 
+@synthesize zone1;
+@synthesize zone2;
+@synthesize zone3;
+@synthesize zone4;
+@synthesize zone5;
+
+
 //max
 float max = 1.00;
 float min = 1000.00;
@@ -113,56 +120,7 @@ float hr = 10.0;
 	if ( hrData != nil )
 	{
         
-        //set the apps badge to be heartrate
-        [[UIApplication sharedApplication] setApplicationIconBadgeNumber:hrData.computedHeartrate];
-        
-        // unformatted value.
-		// computedHeartrateLabel.text = [NSString stringWithFormat:@"%d", hrData.computedHeartrate];
-        
-        
-        
-        NSString* heartBeat = [hrData formattedHeartrate:TRUE];
-        
-        //store current HR in variable;
-        hr = [heartBeat floatValue];
-
-        // update basic data.
-        computedHeartrateLabel.text = [hrData formattedHeartrate:TRUE];
-        
-        
-        //set min hr
-        if(hr > max){
-            
-            //min is int
-            max = hr;
-            
-            NSLog(@"Max :%f", max);
-            
-            maxHeartrateLabel.text = [NSString stringWithFormat:@"%f",max];
-            
-        }//set min
-               
-        
-        
-        //set min hr
-        if(hr < min){
-            
-            //min is int
-            min = hr;
-            
-            minHeartrateLabel.text = [NSString stringWithFormat:@"%f",min];
-
-        }//set min    
-        
-
-
-        
-       // NSMutableArray *curRow = [[NSMutableArray alloc] init];; /* use to access the row while loading with objects */
-        //[curRow addObject:[hrData formattedHeartrate:TRUE]];
-        //[curRow addObject:maxString];
-        //[heartBeat addObject:curRow]; /* first row is added */
-        //NSLog(@"%@",heartBeat);
-
+        [self calculateHeartRate:hrData.computedHeartrate];
 
 	}
 	else
@@ -196,7 +154,7 @@ float hr = 10.0;
 //--------------------------------------------------------------------------------
 
 
-//declare what this view controller looks like
+//declare what *this* view controller looks like
 -(void)setUpScreen
 {
     self.title = @"New effort";
@@ -235,6 +193,84 @@ float hr = 10.0;
     
     
 }
+
+
+-(float) calculateHeartRate:(float) heartRate
+{
+    //set the apps badge to be heartrate
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:heartRate];
+    
+    // update basic data.
+    computedHeartrateLabel.text = [NSString stringWithFormat:@"%.f",heartRate];
+    
+    //set min hr
+    if(heartRate > max){
+        
+        //min is int
+        max = heartRate;
+        
+        maxHeartrateLabel.text = [NSString stringWithFormat:@"%.f",max];
+        
+
+        
+    }//set min
+    
+    
+    
+    //set min hr
+    if(heartRate < min){
+        
+        //min is int
+        min = heartRate;
+        
+        minHeartrateLabel.text = [NSString stringWithFormat:@"%.f",min];
+        
+        //calculate HR zones
+        //[self calculateZones:max :min];
+
+        
+    }//set min
+    
+    //calculate HR zones;
+    [self calculateZones:65:190];
+    
+    return 0;
+}
+
+
+-(void)calculateZones:(float)min :(float)max
+{
+
+    float percentage = max / 100;
+    
+
+    float zone1Upper = (percentage * 60) - 1;
+    float zone2Lower = percentage * 60;
+    float zone2Upper = (percentage * 70) - 1;
+    float zone3Lower = percentage * 70;
+    float zone3Upper = (percentage * 89) - 1;
+    float zone4Lower = percentage * 80;
+    float zone4Upper = (percentage * 90) -1;
+    float zone5Lower = percentage * 90;
+
+    
+    zone1.text = [NSString stringWithFormat:@"Zone 1 : 0-%0.f",zone1Upper];
+    zone2.text = [NSString stringWithFormat:@"Zone 2 : %0.f-%0.f",zone2Lower,zone2Upper];
+    zone3.text = [NSString stringWithFormat:@"Zone 3 : %0.f-%0.f",zone3Lower,zone3Upper];
+    zone4.text = [NSString stringWithFormat:@"Zone 4 : %0.f-%0.f",zone4Lower,zone4Upper];
+    zone5.text = [NSString stringWithFormat:@"Zone 5 : %0.f+ ",zone5Lower];
+
+    
+    NSLog(@"zone1:  : U: %0.f",zone1Upper);
+    NSLog(@"zone2: L: %0.f : U: %0.f",zone2Lower,zone2Upper);
+    NSLog(@"zone3: L: %0.f : U: %0.f",zone3Lower,zone3Upper);
+    NSLog(@"zone4: L: %0.f : U: %0.f",zone4Lower,zone4Upper);
+    NSLog(@"zone5: L: %0.f +",zone5Lower);
+
+    
+
+}
+
 
 
 @end
