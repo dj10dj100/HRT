@@ -22,7 +22,7 @@
 #import "SensorManagerViewController.h"
 #import "BTDeviceInfoVC.h"
 #import "DeviceDiscoveryVC.h"
-
+#import "HeartrateViewController.h"
 
 @interface WFSensorCommonViewController (_PRIVATE_)
 
@@ -44,6 +44,8 @@
 @synthesize connectButton;
 @synthesize wildcardSwitch;
 @synthesize proximitySwitch;
+
+
 
 
 #pragma mark -
@@ -184,6 +186,12 @@
                     
                 case WF_SENSOR_CONN_ERROR_PROXIMITY_SEARCH_WHILE_CONNECTED:
                     msg = @"Proximity search is not allowed while a device of the specified type is connected to the iPhone.";
+                    break;
+                case WF_SENSOR_CONN_ERROR_NO_NEW_DATA:
+                    break;
+                case WF_SENSOR_CONN_ERROR_ACTIVITY_TIMEOUT:
+                    break;
+                case WF_SENSOR_CONN_ERROR_NONE:
                     break;
             }
             
@@ -329,6 +337,11 @@
                 // get the BTLE common data and display the detail view.
                 btDeviceInfo.commonData = (WFBTLECommonData*)[data performSelector:@selector(btleCommonData)];
                 [btDeviceInfo updateDisplay];
+                
+                
+                //remove the loading view
+                [self->loadingView setHidden:YES];
+                
             }
         }
 
@@ -352,16 +365,6 @@
     signalEfficiencyLabel.text = @"n/a";
 }
 
-//--------------------------------------------------------------------------------
-- (void)updateData
-{
-    // update the device status labels.
-    deviceIdLabel.text = [self deviceIdString];
-    signalEfficiencyLabel.text = [self signalString];
-    
-    // update the device info.
-    [self updateDeviceInfo];
-}
 
 
 #pragma mark Properties
@@ -393,6 +396,20 @@
 	{
 		case WF_SENSOR_CONNECTION_STATUS_IDLE:
 		{
+            
+            
+            
+            
+            //Create and add the Activity Indicator to Current View
+            loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+            loadingView.alpha = 1.0;
+            loadingView.center = CGPointMake(160,120);
+            loadingView.transform = CGAffineTransformMakeScale(1.25, 1.25);
+            loadingView.hidesWhenStopped = NO;
+            [self.view addSubview:loadingView];
+            [loadingView startAnimating];
+            
+            
 			// create the connection params.
 			WFConnectionParams* params = nil;
 			//
@@ -624,5 +641,18 @@
     
     return retVal;
 }
+
+
+//--------------------------------------------------------------------------------
+- (void)updateData
+{
+    // update the device status labels.
+    deviceIdLabel.text = [self deviceIdString];
+    signalEfficiencyLabel.text = [self signalString];
+
+    // update the device info.
+    [self updateDeviceInfo];
+}
+
 
 @end

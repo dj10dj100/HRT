@@ -21,7 +21,6 @@
 #import <WFConnector/WFConnector.h>
 #import "SensorManagerViewController.h"
 
-
 @class ANTDeviceInfoVC;
 @class BTDeviceInfoVC;
 
@@ -37,6 +36,8 @@
 	UIButton* connectButton;
 	UISwitch* wildcardSwitch;
     UISwitch* proximitySwitch;
+    
+    UIActivityIndicatorView *loadingView;
     
     ANTDeviceInfoVC* antDeviceInfo;
     BTDeviceInfoVC* btDeviceInfo;

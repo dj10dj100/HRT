@@ -75,14 +75,14 @@
     //UIToolbar *toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
     //[self.view addSubview:toolbar];
     
-    UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
+    //UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
     
-    UILabel *lblTitle  = [[UILabel alloc]initWithFrame:CGRectMake(0,0,screenWidth,44)];
+    /*UILabel *lblTitle  = [[UILabel alloc]initWithFrame:CGRectMake(0,0,screenWidth,44)];
     lblTitle.backgroundColor = [UIColor clearColor];
     lblTitle.text = @"HRTZ";
     lblTitle.textAlignment = NSTextAlignmentCenter;
-	[bar addSubview: lblTitle];  
-    [self.view addSubview:bar];
+	//[bar addSubview: lblTitle];
+    //[self.view addSubview:bar];*/
     
     //UINavigationItem* anItem = [[UINavigationItem alloc] initWithTitle:@"HeyHey"];
     //[self.view addSubview:anItem];

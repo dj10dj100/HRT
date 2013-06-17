@@ -61,14 +61,14 @@
     CGFloat screenWidth = screenRect.size.width;  
     
     
-    UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
+    /*UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
     
     UILabel *lblTitle  = [[UILabel alloc]initWithFrame:CGRectMake(0,0,screenWidth,44)];
     lblTitle.backgroundColor = [UIColor clearColor];
     lblTitle.text = @"HRTZ";
     lblTitle.textAlignment = NSTextAlignmentCenter;
 	[bar addSubview: lblTitle];
-    [self.view addSubview:bar];
+    [self.view addSubview:bar];*/
     
     
     //set background colour to image context bounds;

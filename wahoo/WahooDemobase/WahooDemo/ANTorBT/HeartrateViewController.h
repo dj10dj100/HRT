@@ -28,6 +28,11 @@
 	UILabel* computedHeartrateLabel;
 	UILabel* maxHeartrateLabel;
     UILabel* minHeartrateLabel;
+    
+    UIImageView* zone5img;
+    UIImageView* zone4img;
+    UIImageView* zone3img;
+    UIImageView* zone2img;
 
 
 }
@@ -43,6 +48,11 @@
 @property (retain, nonatomic) IBOutlet UILabel* zone3;
 @property (retain, nonatomic) IBOutlet UILabel* zone4;
 @property (retain, nonatomic) IBOutlet UILabel* zone5;
+
+@property (retain, nonatomic) IBOutlet UIImageView* zone2img;
+@property (retain, nonatomic) IBOutlet UIImageView* zone3img;
+@property (retain, nonatomic) IBOutlet UIImageView* zone4img;
+@property (retain, nonatomic) IBOutlet UIImageView* zone5img;
 
 
 

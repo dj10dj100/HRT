@@ -32,11 +32,25 @@
 @synthesize zone4;
 @synthesize zone5;
 
+@synthesize zone2img;
+@synthesize zone3img;
+@synthesize zone4img;
+@synthesize zone5img;
 
 //max
 float max = 1.00;
 float min = 1000.00;
 float hr = 10.0;
+
+
+float zone1Upper = 0;
+float zone2Lower = 0;
+float zone2Upper = 0;
+float zone3Lower = 0;
+float zone3Upper = 0;
+float zone4Lower = 0;
+float zone4Upper = 0;
+float zone5Lower = 0;
 
 
 #pragma mark -
@@ -121,6 +135,7 @@ float hr = 10.0;
 	{
         
         [self calculateHeartRate:hrData.computedHeartrate];
+        [self currentZone:hrData.computedHeartrate];
 
 	}
 	else
@@ -162,13 +177,16 @@ float hr = 10.0;
     
     
     //Declare this views background as the image specced, must be resized to fit screen size;
-    UIGraphicsBeginImageContext(self.view.frame.size);
+    /*UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"bg_Purple_textured.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     //set background colour to image context bounds;
-    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];*/
+    
+    //set the complete app background to my background image
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_Purple_textured.png"]];
     
     
     //get screen measurements
@@ -178,14 +196,14 @@ float hr = 10.0;
     //UIToolbar *toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
     //[self.view addSubview:toolbar];
     
-    UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
+    /*UINavigationBar* bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, screenWidth, 44)];
     
     UILabel *lblTitle  = [[UILabel alloc]initWithFrame:CGRectMake(0,0,screenWidth,44)];
     lblTitle.backgroundColor = [UIColor clearColor];
     lblTitle.text = @"HRTZ";
     lblTitle.textAlignment = NSTextAlignmentCenter;
 	[bar addSubview: lblTitle];
-    [self.view addSubview:bar];
+    [self.view addSubview:bar];*/
     
     //UINavigationItem* anItem = [[UINavigationItem alloc] initWithTitle:@"HeyHey"];
     //[self.view addSubview:anItem];
@@ -203,7 +221,7 @@ float hr = 10.0;
     // update basic data.
     computedHeartrateLabel.text = [NSString stringWithFormat:@"%.f",heartRate];
     
-    //set min hr
+    //set max hr
     if(heartRate > max){
         
         //min is int
@@ -211,9 +229,11 @@ float hr = 10.0;
         
         maxHeartrateLabel.text = [NSString stringWithFormat:@"%.f",max];
         
+        //calculate HR zones on update of max;
+        [self calculateZones:min:max];
 
         
-    }//set min
+    }//set max
     
     
     
@@ -223,19 +243,14 @@ float hr = 10.0;
         //min is int
         min = heartRate;
         
+        //heartrateLabel
         minHeartrateLabel.text = [NSString stringWithFormat:@"%.f",min];
-        
-        //calculate HR zones
-        //[self calculateZones:max :min];
 
         
     }//set min
-    
-    //calculate HR zones;
-    [self calculateZones:65:190];
-    
+        
     return 0;
-}
+}// calculateHeartRate
 
 
 -(void)calculateZones:(float)min :(float)max
@@ -244,14 +259,14 @@ float hr = 10.0;
     float percentage = max / 100;
     
 
-    float zone1Upper = (percentage * 60) - 1;
-    float zone2Lower = percentage * 60;
-    float zone2Upper = (percentage * 70) - 1;
-    float zone3Lower = percentage * 70;
-    float zone3Upper = (percentage * 89) - 1;
-    float zone4Lower = percentage * 80;
-    float zone4Upper = (percentage * 90) -1;
-    float zone5Lower = percentage * 90;
+    zone1Upper = (percentage * 60) - 1;
+    zone2Lower = percentage * 60;
+    zone2Upper = (percentage * 70) - 1;
+    zone3Lower = percentage * 70;
+    zone3Upper = (percentage * 89) - 1;
+    zone4Lower = percentage * 80;
+    zone4Upper = (percentage * 90) -1;
+    zone5Lower = percentage * 90;
 
     
     zone1.text = [NSString stringWithFormat:@"Zone 1 : 0-%0.f",zone1Upper];
@@ -269,8 +284,64 @@ float hr = 10.0;
 
     
 
+}//calculateZones
+
+
+-(void)currentZone:(float)heartRate
+{
+
+    if(heartRate < zone1Upper){
+        
+        NSLog(@"LT Zone 1 Upper");
+    
+    }
+    
+    //zone 2
+    if(heartRate > zone1Upper && heartRate < zone2Upper){
+        
+        NSLog(@"In Zone 2");
+        
+    }
+    
+    //zone 3
+    if(heartRate > zone2Upper && heartRate < zone3Upper){
+        
+        NSLog(@"In Zone 3");
+        
+    }
+    
+    //zone 4
+    if(heartRate > zone3Upper && heartRate < zone4Upper){
+        
+        NSLog(@"In Zone 4");
+        
+    }
+    
+    //zone 5
+    if(heartRate > zone4Upper){
+        
+        NSLog(@"In Zone 5");
+        
+    }
+
+    //UIImageview testing
+    zone5img.alpha = 0.4; //Alpha runs from 0.0 to 1.0
+    zone4img.alpha = 0.6; //Alpha runs from 0.0 to 1.0
+    zone3img.alpha = 0.8; //Alpha runs from 0.0 to 1.0
+    zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+
+    
+
+    
 }
 
 
+
+-(void)heartRateAnimation:(float)heartRate
+{
+
+
+
+}
 
 @end

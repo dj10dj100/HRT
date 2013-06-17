@@ -75,6 +75,10 @@
 		6D8BAB09176125AA005AB3DB /* WFSensorCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAADE176125AA005AB3DB /* WFSensorCommonViewController.m */; };
 		6D8BAB0C17612D15005AB3DB /* BTDeviceInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8BAB0B17612D15005AB3DB /* BTDeviceInfoVC.m */; };
 		6D8BAB1017613D9B005AB3DB /* icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8BAB0F17613D9B005AB3DB /* icon-114.png */; };
+		6D9E9662176FC03B0086FC84 /* Segments_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E965E176FC03B0086FC84 /* Segments_01.png */; };
+		6D9E9663176FC03B0086FC84 /* Segments_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E965F176FC03B0086FC84 /* Segments_02.png */; };
+		6D9E9664176FC03B0086FC84 /* Segments_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E9660176FC03B0086FC84 /* Segments_03.png */; };
+		6D9E9665176FC03B0086FC84 /* Segments_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E9661176FC03B0086FC84 /* Segments_04.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +164,10 @@
 		6D8BAB0A17612D15005AB3DB /* BTDeviceInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTDeviceInfoVC.h; path = ../../wahoo/WahooDemoScale/WahooDemo/BTSmart/BTDeviceInfoVC.h; sourceTree = "<group>"; };
 		6D8BAB0B17612D15005AB3DB /* BTDeviceInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTDeviceInfoVC.m; path = ../../wahoo/WahooDemoScale/WahooDemo/BTSmart/BTDeviceInfoVC.m; sourceTree = "<group>"; };
 		6D8BAB0F17613D9B005AB3DB /* icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-114.png"; sourceTree = "<group>"; };
+		6D9E965E176FC03B0086FC84 /* Segments_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Segments_01.png; path = ../../IMAGERY/Heart/images/Segments_01.png; sourceTree = "<group>"; };
+		6D9E965F176FC03B0086FC84 /* Segments_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Segments_02.png; path = ../../IMAGERY/Heart/images/Segments_02.png; sourceTree = "<group>"; };
+		6D9E9660176FC03B0086FC84 /* Segments_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Segments_03.png; path = ../../IMAGERY/Heart/images/Segments_03.png; sourceTree = "<group>"; };
+		6D9E9661176FC03B0086FC84 /* Segments_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Segments_04.png; path = ../../IMAGERY/Heart/images/Segments_04.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +261,10 @@
 		6D315BB2175E659B00AE0DEB /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				6D9E965E176FC03B0086FC84 /* Segments_01.png */,
+				6D9E965F176FC03B0086FC84 /* Segments_02.png */,
+				6D9E9660176FC03B0086FC84 /* Segments_03.png */,
+				6D9E9661176FC03B0086FC84 /* Segments_04.png */,
 				6D315BC4175E917800AE0DEB /* heart-568h@2x */,
 				6D315BB7175E7F2B00AE0DEB /* tabBarBG.png */,
 				6D315BB5175E6B5000AE0DEB /* bg_Purple_textured-568h@2x */,
@@ -466,6 +478,10 @@
 				6D8BAB05176125AA005AB3DB /* WeightHistoryViewController.xib in Resources */,
 				6D8BAB06176125AA005AB3DB /* WeightScaleViewController.xib in Resources */,
 				6D8BAB1017613D9B005AB3DB /* icon-114.png in Resources */,
+				6D9E9662176FC03B0086FC84 /* Segments_01.png in Resources */,
+				6D9E9663176FC03B0086FC84 /* Segments_02.png in Resources */,
+				6D9E9664176FC03B0086FC84 /* Segments_03.png in Resources */,
+				6D9E9665176FC03B0086FC84 /* Segments_04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
