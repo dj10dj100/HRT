@@ -33,6 +33,9 @@
     UIImageView* zone4img;
     UIImageView* zone3img;
     UIImageView* zone2img;
+    
+    NSTimer * timer;
+
 
 
 }
@@ -54,6 +57,7 @@
 @property (retain, nonatomic) IBOutlet UIImageView* zone4img;
 @property (retain, nonatomic) IBOutlet UIImageView* zone5img;
 
+@property (nonatomic, retain) NSTimer * timer;
 
 
 //calculate with the heartRate Method

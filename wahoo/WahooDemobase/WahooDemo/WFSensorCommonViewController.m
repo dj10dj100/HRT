@@ -474,6 +474,10 @@
 			// disconnect the sensor.
 			[self.sensorConnection disconnect];
             
+            //remove the loading view
+            [self->loadingView setHidden:YES];
+            
+            
             NSLog(@"Turned off logging");
             
 /** ----------------------------------------------------------- **/

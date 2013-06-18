@@ -37,6 +37,8 @@
 @synthesize zone4img;
 @synthesize zone5img;
 
+@synthesize timer;
+
 //max
 float max = 1.00;
 float min = 1000.00;
@@ -51,6 +53,11 @@ float zone3Upper = 0;
 float zone4Lower = 0;
 float zone4Upper = 0;
 float zone5Lower = 0;
+
+
+int currentZone = 0;
+
+
 
 
 #pragma mark -
@@ -82,7 +89,12 @@ float zone5Lower = 0;
         //If you select ANT, you are connected to the first availible 
         //HR sensor
         
+        //set up the screen
         [self setUpScreen];
+        
+        //run the animation code every second
+        timer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target:self selector:@selector(heartRateAnimation:) userInfo:nil repeats: YES];
+
         
         sensorType = WF_SENSORTYPE_HEARTRATE;
         applicableNetworks = WF_NETWORKTYPE_ANTPLUS | WF_NETWORKTYPE_BTLE;
@@ -95,6 +107,11 @@ float zone5Lower = 0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+        
+    
+    
     
     self.navigationItem.title = @"Heart Rate";
 }
@@ -230,7 +247,7 @@ float zone5Lower = 0;
         maxHeartrateLabel.text = [NSString stringWithFormat:@"%.f",max];
         
         //calculate HR zones on update of max;
-        [self calculateZones:min:max];
+        [self calculateZones:60:100];
 
         
     }//set max
@@ -292,53 +309,238 @@ float zone5Lower = 0;
 
     if(heartRate < zone1Upper){
         
-        NSLog(@"LT Zone 1 Upper");
+        currentZone = 1;
     
     }
     
     //zone 2
     if(heartRate > zone1Upper && heartRate < zone2Upper){
         
-        NSLog(@"In Zone 2");
+        currentZone = 2;
         
     }
     
     //zone 3
     if(heartRate > zone2Upper && heartRate < zone3Upper){
-        
-        NSLog(@"In Zone 3");
+                
+        currentZone = 3;
         
     }
     
     //zone 4
     if(heartRate > zone3Upper && heartRate < zone4Upper){
-        
-        NSLog(@"In Zone 4");
+                
+        currentZone = 4;
         
     }
     
     //zone 5
     if(heartRate > zone4Upper){
-        
-        NSLog(@"In Zone 5");
-        
+                
+        currentZone = 5;
+
     }
 
-    //UIImageview testing
-    zone5img.alpha = 0.4; //Alpha runs from 0.0 to 1.0
-    zone4img.alpha = 0.6; //Alpha runs from 0.0 to 1.0
-    zone3img.alpha = 0.8; //Alpha runs from 0.0 to 1.0
-    zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
-
-    
 
     
 }
 
 
 
--(void)heartRateAnimation:(float)heartRate
+-(void)heartRateAnimation:(NSTimer *) theTimer
 {
+    //declare the animation of the heart;
+    CABasicAnimation *theAnimation;
+
+    switch (currentZone) {
+            
+        case 5:
+            
+            //value of the layer
+            theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+            
+            //animation lasts 1.7 seconds
+            theAnimation.duration= 1;
+            
+            //and it repeats forever
+            theAnimation.repeatCount=0;
+            
+            
+            //justify the opacity as you like (1=fully visible, 0=unvisible)
+            theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+            theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+            
+            //we want a reverse animation
+            theAnimation.autoreverses = YES;
+            
+            
+            //Assign the animation to your UIImage layer and the
+            //animation will start immediately
+            [zone5img.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+            
+            zone4img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+        
+            
+            
+        break;
+            
+            
+        case 4:
+            
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+            
+                //value of the layer
+                theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+            
+                //animation lasts 1.7 seconds
+                theAnimation.duration= 1;
+            
+                //and it repeats forever
+                theAnimation.repeatCount=1;
+            
+            
+                //justify the opacity as you like (1=fully visible, 0=unvisible)
+                theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+                theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+            
+                //we want a reverse animation
+                theAnimation.autoreverses = YES;
+
+            
+                //Assign the animation to your UIImage layer and the
+                //animation will start immediately
+                [zone4img.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+            
+                zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            
+            break;
+            
+            
+            case 3:
+            
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+            
+                //value of the layer
+                theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+            
+                //animation lasts 1.7 seconds
+                theAnimation.duration= 1;
+            
+                //and it repeats forever
+                theAnimation.repeatCount=1;
+            
+                //we want a reverse animation
+                theAnimation.autoreverses = YES;
+            
+                //justify the opacity as you like (1=fully visible, 0=unvisible)
+                theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+                theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+            
+                //Assign the animation to your UIImage layer and the
+                //animation will start immediately
+                [zone3img.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+        
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            
+            break;
+            
+            case 2:
+            
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 0.0; //Alpha runs from 0.0 to 1.0           
+                            
+                //value of the layer
+                theAnimation=[CABasicAnimation animationWithKeyPath:@"opacity"];
+                
+                //animation lasts 1.7 seconds
+                theAnimation.duration= 1;
+                
+                //and it repeats forever
+                theAnimation.repeatCount=1;
+                
+                //we want a reverse animation
+                theAnimation.autoreverses = YES;
+                
+                //justify the opacity as you like (1=fully visible, 0=unvisible)
+                theAnimation.fromValue=[NSNumber numberWithFloat:1.0];
+                theAnimation.toValue=[NSNumber numberWithFloat:0.0];
+            
+                //Assign the animation to your UIImage layer and the
+                //animation will start immediately
+                [zone2img.layer addAnimation:theAnimation forKey:@"animateOpacity"];
+            
+            
+            break;
+            
+            case 1:
+            
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 0.0; //Alpha runs from 0.0 to 1.0      
+                zone2img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+ 
+            
+            break;
+            
+            
+            /* //zone 2
+            
+            case 3:
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            
+            break;
+            //zone 3
+            
+            case 4:
+            
+                zone5img.alpha = 0.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            
+            break;
+            //zone 4
+            
+            case 5:
+            
+                zone5img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            break;
+            //zone 5
+            
+            default:          
+            
+                zone5img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone4img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone3img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+                zone2img.alpha = 1.0; //Alpha runs from 0.0 to 1.0
+            
+            break;
+            */
+
+    }
+            
+      
 
 
 
